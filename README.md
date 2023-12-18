@@ -1,6 +1,6 @@
 
 # **LANE DETECTION USING ENET**
-Lane detection is a crucial computer vision task that involves identifying the boundaries of driving lanes in an image or video of a road scene. It plays a vital role in various applications, particularly in the realm of autonomous vehicles and advanced driver-assistance systems (ADAS).  Convolutional neural networks (CNNs) are now the dominant approach for lane detection. Trained on large datasets of road images, these models can achieve high accuracy even in challenging situations.  In this we implemented FCN architecture which is a deep learning algorithm widely used for image segmentation.
+Lane detection is a crucial computer vision task that involves identifying the boundaries of driving lanes in an image or video of a road scene. It plays a vital role in various applications, particularly in the realm of autonomous vehicles and advanced driver-assistance systems (ADAS).  Convolutional neural networks (CNNs) are now the dominant approach for lane detection. Trained on large datasets of road images, these models can achieve high accuracy even in challenging situations.  In this we implemented ENET architecture which is a deep learning algorithm widely used for image segmentation.
 ## ENET(EFFICIENT NET)
 ENet (Efficient Neural Network) is a deep neural network architecture designed for real-time semantic segmentation tasks.    ENet is significantly faster than other popular semantic segmentation architectures, such as VGG and ResNet. This is due to its use of several techniques to reduce the number of parameters and floating-point operations (FLOPs) required. For example, ENet uses a smaller number of convolutional filters and smaller kernel sizes than other architectures. Additionally, ENet uses a technique called "bottleneck residual connections" to reduce the number of FLOPs required for each layer.
 
@@ -16,8 +16,7 @@ The TuSimple dataset consists of 6,408 road images on US highways. The resolutio
 
 ## ENET Architecuture 
 
-![App Screenshot](https://via.placeholder.com/468x300?text=App+Screenshot+Here)
-
+![ENET](https://github.com/maheshmm7/ENET_Lane_Detection/assets/121345928/d90a3ebc-f794-4e3c-b0f7-c983808818a2)
 
 ## Downloads :    
 Download the Dataset Here: [TuSimple](https://www.kaggle.com/datasets/manideep1108/tusimple)
@@ -56,17 +55,24 @@ To test the code
 
 ## METRICS VISUALIZATION
 
-![App Screenshot](https://via.placeholder.com/468x300?text=App+Screenshot+Here)
+![ENET_V](https://github.com/maheshmm7/ENET_Lane_Detection/assets/121345928/c406694c-4266-48ff-9175-b655083ad14d)
+
 
 The Above graph visualize the metrics during the training process, it shows the graph showing Training & Validation Loss and Training & Validation Accuracy with the staring value and ending value.  The graphs shows the gradual decrease in the loss function and gradual increase accuracy as shown in the visualization.
 
 You can also check the TensorBoard logs to visualize the metrics and the layers in the Architecture.  Here are the TensorBoard visualization of graphs:
 
-![App Screenshot](https://via.placeholder.com/468x300?text=App+Screenshot+Here)
+![enet_BA](https://github.com/maheshmm7/ENET_Lane_Detection/assets/121345928/16ba871a-c0a7-4a5b-9575-1e4b788224ac)
 
-![App Screenshot](https://via.placeholder.com/468x300?text=App+Screenshot+Here)
+The Above graph visualize the Binary Accuracy of ENet model visualized using TensorBoard.
 
-![App Screenshot](https://via.placeholder.com/468x300?text=App+Screenshot+Here)
+![enet_BL](https://github.com/maheshmm7/ENET_Lane_Detection/assets/121345928/2846344c-7f13-4fe9-950b-a3b351534e14)
+
+The Above graph visualize the Binary Loss of ENet model visualized using TensorBoard.
+
+![enet_IL](https://github.com/maheshmm7/ENET_Lane_Detection/assets/121345928/35c9a78a-90e7-4b33-b6c1-105dc63bc530)
+
+The Above graph visualize the Instance Loss of ENet model visualized using TensorBoard.
 
 To run the TensorBoard logs follow the command in your Terminal:
 ```bash
@@ -75,11 +81,15 @@ tensorboard --logdir=path/to/your/logs/directory
 After running the command, open your web browser and go to http://localhost:6006 to access the TensorBoard interface. You'll be able to navigate through the different tabs to explore the data recorded in the tensorboard v2 file.
 ## Predictions 
 
-![App Screenshot](https://via.placeholder.com/468x300?text=App+Screenshot+Here)
+![1_enet](https://github.com/maheshmm7/ENET_Lane_Detection/assets/121345928/20e88d9d-f9fc-4497-b461-1e91daa0a6cb)
 
-![App Screenshot](https://via.placeholder.com/468x300?text=App+Screenshot+Here)
+![2_enet](https://github.com/maheshmm7/ENET_Lane_Detection/assets/121345928/a0d293a1-7595-4c10-93b1-d6453d7cc2eb)
 
-![App Screenshot](https://via.placeholder.com/468x300?text=App+Screenshot+Here)
+![3_enet](https://github.com/maheshmm7/ENET_Lane_Detection/assets/121345928/d6565822-dd32-4383-95fe-4bb38d7d9f72)
+
+![4_enet](https://github.com/maheshmm7/ENET_Lane_Detection/assets/121345928/36133c9c-19bd-438d-be06-21869f42c00f)
+
+
 
 I tested the Predictions on the inference code by loading the saved .pth weights file and testing it on the new images.  The model predictions came out to be good as shown in the figures.
 
