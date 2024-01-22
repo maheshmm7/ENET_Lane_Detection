@@ -48,9 +48,11 @@ Also find the inference_ent.ipynb file which contained the testing or inference 
 
 To test the code
 ```bash
-  Download the inference_enet.ipynb file and load the model weights
-  ENET.pth path  and provide the testing image path in the inference code. 
-  By running the inference_enet.ipynb file you can visualize the plot of the predictions.
+  - Download the "inference_enet.ipynb" file (Testing Code) and the "ENET.pth" file (model weights).
+  - Open the "inference_enet.ipynb" file and specify the "ENET.pth" file in the "model_path" variable. Next, provide the file path for the testing image in the 
+     "input_image_path" variable.
+  - By executing the "inference_enet.ipynb" file, you can visualize the predictions.
+  - Feel free to test it on any image of your choice.
 ```
 
 ## METRICS VISUALIZATION
